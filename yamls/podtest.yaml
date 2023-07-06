@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: testpod001
+  labels:
+    app: testpod001-label
+spec:
+  nodeName: node001
+  subdomain: testsub
+  containers:
+    - name: mytest001
+      image: docker.io/library/nginx:1.19
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: testpod002
+spec:
+  nodeName: node02
+  subdomain: testsub002
+  containers:
+    - name: mytest002
+      image: docker.io/library/nginx:1.19
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: testsvc001-svc
+spec:
+  type: ClusterIP
+#  externalIPs:
+#    - 192.168.56.57
+  ports:
+    - port: 80
+      targetPort: 80
+  selector:
+    app: testpod001-label
+
