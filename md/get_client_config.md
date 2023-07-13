@@ -16,3 +16,12 @@ import "k8s.io/client-go/tools/clientcmd"
 // 默认使用常量所表示的 ~/.kube/config 路径
 config, err := clientcmd.BuildConfigFromFlags("", clientcmd.RecommendedHomeFile)
 ```
+
+### 根据运行环境自动加载最适合的配置
+
+```
+import "k8s.io/cli-runtime/pkg/genericclioptions"
+
+flags := genericclioptions.NewConfigFlags(true)
+config := flags.ToRawKubeConfigLoader()
+```
