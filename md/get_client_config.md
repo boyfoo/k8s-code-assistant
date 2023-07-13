@@ -1,6 +1,6 @@
 ## 获取 client-go config
 
-### pod内获取默认config
+### pod 内获取默认 config
 
 ```go
 import "k8s.io/client-go/rest"
