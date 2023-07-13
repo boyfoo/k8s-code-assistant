@@ -13,5 +13,6 @@ config := rest.InClusterConfig()
 ```
 import "k8s.io/client-go/tools/clientcmd"
 
-config, err := clientcmd.BuildConfigFromFlags("", ".kube/config")
+// 默认使用常量所表示的 ~/.kube/config 路径
+config, err := clientcmd.BuildConfigFromFlags("", clientcmd.RecommendedHomeFile)
 ```
