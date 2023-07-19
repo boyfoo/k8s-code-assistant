@@ -24,5 +24,3 @@ $ openssl x509 -req -in client.csr -CA /etc/kubernetes/pki/ca.crt -CAkey=/etc/ku
 
 切换上下文：`kubectl config use-context zx-context`
 
-绑定权限：
-
