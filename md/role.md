@@ -1,4 +1,4 @@
-### 新疆UserAccount用户并赋予权限
+### 新疆UserAccount用户
 
 生成证书：
 
