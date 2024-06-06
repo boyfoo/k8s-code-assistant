@@ -1,7 +1,8 @@
 ### 获取对象的 OwnerReference
 
-```
+```golang
 import metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+
 ownerReference := metav1.GetControllerOf(obj)
 ```
 
