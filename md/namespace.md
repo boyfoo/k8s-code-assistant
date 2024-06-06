@@ -9,7 +9,7 @@ key, err := cache.MetaNamespaceKeyFunc(k8sObj)
 
 ### 根据 namespace 唯一 key 值获取对象名
 
-```
+```golang
 import "k8s.io/client-go/tools/cache"
 
 namespace, name, _ := cache.SplitMetaNamespaceKey(key)
