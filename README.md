@@ -7,4 +7,5 @@
 * <a href="md/role.md" target="_blank"> 用户权限 </a>
 * <a href="md/namespace.md" target="_blank"> Namespace </a>
 * <a href="md/ownerReference.md" target="_blank"> OwnerReference </a>
+* <a href="md/retry.md" target="_blank"> retry 重试 </a>
 
